@@ -108,7 +108,7 @@ def load_recommender(path, start_page=1):
     return 'Corpus Loaded.'
 
 
-def generate_text(openAI_key, prompt, engine="text-davinci-003"):
+def generate_text(openAI_key, prompt, engine="gpt-3.5-turbo"):
     openai.api_key = openAI_key
     completions = openai.Completion.create(
         engine=engine,
